@@ -16,12 +16,6 @@ button{
     /* border: 2px solid darkkhaki; */
 }
 
-h3{
-    text-align: center;
-    font-family: monospace;
-    font-size: larger;
-}
-
 #title{
     font-family:monospace;
     font-weight: bolder;
@@ -39,6 +33,24 @@ h3{
 
 .btn{
     text-align: center;
+}
+
+.record{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.record h3{
+    font-family: monospace;
+    font-size: larger;
+    display: inline;
+}
+
+.record button{
+    margin-left: 20px;
+    height: 30px;
+    width: auto;
 }
 
 

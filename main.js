@@ -25,16 +25,18 @@ function startClock() {
 }
 
 function stopClock() {
+    clearInterval(interval)
+    isRunning = false;
+}
+
+function recordClock() {
     if(count <= 10) {
         let paragraph = document.createElement("p");
         let text = document.createTextNode(`#${count} ${time.innerHTML}`);
         paragraph.appendChild(text);
         document.body.appendChild(paragraph);
     }
-
-    clearInterval(interval)
     count ++;
-    isRunning = false;
 }
 
 function restartClock() {
