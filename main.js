@@ -25,10 +25,12 @@ function startClock() {
 }
 
 function stopClock() {
-    let paragraph = document.createElement("p");
-    let text = document.createTextNode(`#${count} ${time.innerHTML}`);
-    paragraph.appendChild(text);
-    document.body.appendChild(paragraph);
+    if(count <= 10) {
+        let paragraph = document.createElement("p");
+        let text = document.createTextNode(`#${count} ${time.innerHTML}`);
+        paragraph.appendChild(text);
+        document.body.appendChild(paragraph);
+    }
 
     clearInterval(interval)
     count ++;
@@ -45,5 +47,6 @@ function restartClock() {
 
     secondsElapsed = 0;
     setTime()
+    count = 1;
     isRunning = false;
 }
