@@ -5,16 +5,10 @@ html{
 body{
     min-height: 98vh;
     background-color: rgb(252, 240, 225);
-    display: flex;
-    flex-direction: column;
 }
 
 p{
     text-align: center;
-}
-
-hr{
-    width: 100%;
 }
 
 button{
@@ -27,7 +21,7 @@ button{
     /* border: 2px solid darkkhaki; */
 }
 
-footer{
+header{
     text-align: right;
     font-family: monospace;
     margin-top: auto;
