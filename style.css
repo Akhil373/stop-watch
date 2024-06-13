@@ -10,10 +10,16 @@ button{
     height: 50px;
     width: 150px;
     margin-right: 20px;
-    background-color: bisque;
+    background-color: rgb(248, 201, 144);
     font-family: monospace;
     font-size: 18px;
-    border: 2px solid darkkhaki;
+    /* border: 2px solid darkkhaki; */
+}
+
+h3{
+    text-align: center;
+    font-family: monospace;
+    font-size: larger;
 }
 
 #title{
@@ -21,12 +27,14 @@ button{
     font-weight: bolder;
     font-size: 40px;
     text-decoration: underline;
+    text-align: center;
 }
 
 #time{
     font-size: 80px;
     font-family: monospace;
     font-weight: lighter;
+    text-align: center;
 }
 
 .btn{

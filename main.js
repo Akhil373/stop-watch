@@ -2,6 +2,7 @@ const time = document.getElementById('time');
 let secondsElapsed = 0;
 let interval;
 let isRunning = false;
+let count = 1
 
 
 function setTime() {
@@ -24,12 +25,24 @@ function startClock() {
 }
 
 function stopClock() {
+    let paragraph = document.createElement("p");
+    let text = document.createTextNode(`#${count} ${time.innerHTML}`);
+    paragraph.appendChild(text);
+    document.body.appendChild(paragraph);
+
     clearInterval(interval)
+    count ++;
     isRunning = false;
 }
 
 function restartClock() {
     stopClock()
+
+    let paragraphs = document.querySelectorAll('p')
+    paragraphs.forEach(paragraph => {
+        paragraph.remove()
+    })
+
     secondsElapsed = 0;
     setTime()
     isRunning = false;
